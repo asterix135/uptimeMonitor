@@ -4,6 +4,8 @@ import logging
 
 from time import time
 
+from monitor import UptimeMonitor
+
 
 
 def check_page(url):
@@ -22,7 +24,12 @@ def check_page(url):
 testurl = "http://www.google.ca"
 
 start_time = time()
-check_page(testurl)
+# check_page(testurl)
 end_time = time()
 
 print(f'start1 to end = {end_time - start_time}')
+
+json_url_file = 'urllist.json'
+
+monitor = UptimeMonitor(json_url_file)
+monitor.print_url_list()
