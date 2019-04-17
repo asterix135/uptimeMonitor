@@ -1,5 +1,7 @@
 ## Project files
 urllist.json
+errorlog.log
+monitoringStats.json
 
 ## Python Files
 # Byte-compiled / optimized / DLL files
