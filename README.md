@@ -14,6 +14,7 @@ Essentially, this runs an infinite loop, checking whatever web sites are in urll
 3. run setup.sh from command line (this will create the monitoringStats directory, and rename sample_urllist.json to urllist.json)
 
   `sh setup.sh`
+  
 4. update urllist.json with whatever urls you want to check
 
 
