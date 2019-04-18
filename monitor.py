@@ -51,14 +51,14 @@ class UptimeMonitor():
                 formatted_start_time, error, url
             )
             site_results["other_errors"] = 1
-            site_results["error_timestamp"] = start_time
+            site_results["error_timestamp"] = formatted_start_time
         except timeout:
             logging.error(
                 'socket timed out at %s - URL %s',
                 formatted_start_time, url
             )
             site_results["timeout_errors"] = 1
-            site_results["error_timestamp"] = start_time
+            site_results["error_timestamp"] = formatted_start_time
         else:
             logging.info(
                 'Access successful at %s - URL %s',
