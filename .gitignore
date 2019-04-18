@@ -1,7 +1,7 @@
 ## Project files
 urllist.json
 errorlog.log
-monitoringStats.json
+monitoringStats/*
 
 ## Python Files
 # Byte-compiled / optimized / DLL files
