@@ -9,11 +9,13 @@ Essentially, this runs an infinite loop, checking whatever web sites are in urll
 
 ## Setup
 
-1. Requires python 3.6 or higher
+1. Requires python 3.6 or higher - there are no requirements outside of base python libraries
 2. clone this repo
 3. run setup.sh from command line (this will create the monitoringStats directory, and rename sample_urllist.json to urllist.json)
+
+  `sh setup.sh`
 4. update urllist.json with whatever urls you want to check
-5. There are no dependencies outside of base python libraries
+
 
 ## To run
 
