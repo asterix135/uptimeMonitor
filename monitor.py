@@ -1,5 +1,6 @@
 from urllib.request import urlopen
 from urllib.error import HTTPError, URLError
+from http.client import IncompleteRead
 from socket import timeout
 from time import time
 from datetime import datetime
@@ -45,7 +46,7 @@ class UptimeMonitor():
         }
         try:
             response = urlopen(url, timeout=5, context=ssl.SSLContext()).read()
-        except (HTTPError, URLError) as error:
+        except (HTTPError, URLError, IncompleteRead) as error:
             logging.error(
                 'Data not retrieved at %s because %s\nURL: %s',
                 formatted_start_time, error, url
